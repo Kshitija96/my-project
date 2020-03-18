@@ -1,0 +1,13 @@
+.myDialogue
+{
+    background-color: black;
+    color: white;
+    width: 1300px;
+    height: 100px;
+    bottom:0%;
+    position: fixed;
+    display:inline;
+    animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+}
