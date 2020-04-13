@@ -3,12 +3,35 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <h1> Hello</h1>
+<button id= "myB" class = "btnC">Click Me</button>
+<button class = "btnC1">click</button>
+<button class = "btnC2">click</button>
+<button class = "btnC3">click</button>
+<button class = "btnC4">click</button>
+<div class = "myD" id="myDiv">Rotate</div>
 
 <div class = "myDialogue">
 <h2 style="display: inline;">Today's Offer </h2>
 <span><img  style ="width:20; height: 20;display: inline;margin-left: 20px;" src = "data/images/cross.jpeg"></span>
 </div>
 <script>
-const element =  document.querySelector('.myDialogue')
-element.classList.add('animated', 'fadeInUp')
+const element1 =  document.querySelector('.myDialogue')
+element1.classList.add('animated', 'fadeInUp')
+
+const element =  document.getElementById("myB")
+document.addEventListener('DOMContentLoaded',()=>
+{
+    element.addEventListener("click",()=>{
+    setTimeout(hideEl(),1000);
+    document.getElementById("myDiv").style.display='none';
+})
+
+
+})
+
+function hideEl()
+{
+    document.getElementById("myDiv").style.display='inline';
+}
+
 </script>
